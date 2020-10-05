@@ -1,0 +1,35 @@
+fieldset {
+  margin: 1em 0;
+    padding: 10px;
+
+    background: -webkit-linear-gradient(top, white 80%, #eee);
+    background: -moz-linear-gradient(top, white 80%, #eee);
+    background: -ms-linear-gradient(top, white 80%, #eee);
+    background: linear-gradient(to bottom, white 80%, #eee);
+    border: 2px solid #E0D8B7;
+    background: #fcfaf0;
+    color: #000;">
+ 
+}
+button{
+	
+	 padding: 2px 6px;
+    border: #b5bbc4 1px solid;
+    background: #f7fafc;
+}
+legend{
+	 padding: 1px 8px;
+    border: 2px solid #E0D8B7;
+    border-radius: 6px / 12px;
+    box-shadow: none;
+    background: #fff;
+    font-size: 14px;
+    color: #5E5223;
+	
+}
+ 
+td {
+    height: 30px;
+    vertical-align: bottom; 
+    horizantal-align: center; 
+} 
