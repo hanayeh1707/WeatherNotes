@@ -4,7 +4,8 @@ public class User {
 		
 	private int Id;
 	private String Email; 
-	private String Name ; 
+	private String Name ;
+	private String DOB;  
 	private String Password; 
 	private String Mobile; 
 	private boolean IsAdmin;
