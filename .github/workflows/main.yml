@@ -22,11 +22,11 @@ jobs:
           if [[ ${{ github.event.ref }} =~ ^refs/tags/v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
               echo ::set-output name=match::true
           fi
-      - name: checkout
-        if: steps.check-tag.outputs.match == 'true'
+      
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
    
+        if: steps.check-tag.outputs.match == 'true'
    
       # Runs a single command using the runners shell
       - name: Run a one-line script
