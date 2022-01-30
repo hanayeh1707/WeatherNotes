@@ -6,7 +6,9 @@ name: CI
 on:
 
   workflow_call:
-
+    secrets:
+       test_var:
+         required: true
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -18,7 +20,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      - run: echo ${{test_var}}
+      
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
