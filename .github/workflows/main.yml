@@ -32,5 +32,5 @@ jobs:
   test-caller:
     uses: ./.github/workflows/reusable.yml
     secrets:
-       test_var: ${{secrets.TEST_VAR}}
+       testvar: ${{secrets.TEST_VAR}}
     
